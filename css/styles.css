@@ -484,3 +484,25 @@ a { color: inherit; text-decoration: none; }
   margin: 2.5rem 0 1rem;
 }
 .pricing-group-title:first-of-type { margin-top: 0; }
+
+.product-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.product-details h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+.product-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.product-details li::before { content: "✓"; color: var(--teal); font-weight: 700; margin-right: 0.5rem; }
+@media (min-width: 640px) {
+  .product-details { grid-template-columns: 1fr 1fr; }
+}
