@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lathish.dev/sitemap.xml
+Sitemap: https://lk-systems-lk-project09.vercel.app/sitemap.xml
