@@ -482,5 +482,21 @@ h3 { font-size: 1.4rem; font-weight: 700; }
 .site-footer .footer-inner { align-items: center; }
 
 .hero { overflow-x: clip; }
-.logo img { height: 62px; width: auto; }
-.footer-logo img { height: 52px; width: auto; }
+
+.logo { display: inline-flex; align-items: center; gap: 0.6rem; }
+.logo img { height: 56px; width: auto; transition: filter 0.25s ease; }
+.logo:hover img { filter: drop-shadow(0 0 14px rgba(249, 115, 22, 0.55)); }
+.logo-text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+.footer-logo { display: inline-flex; align-items: center; gap: 0.5rem; }
+.footer-logo img { height: 31px; width: auto; }
+.footer-logo .logo-text { font-size: 1rem; color: var(--color-text-body); }
+@media (max-width: 359px) {
+  .logo-text, .footer-logo .logo-text { display: none; }
+}
