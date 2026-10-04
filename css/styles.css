@@ -1,16 +1,17 @@
 :root {
-  --navy: #1D5A85;
-  --navy-dark: #164669;
-  --navy-tint: #E8F0F7;
-  --teal: #2f9e6f;
-  --teal-tint: #E7F6EF;
-  --ink: #0F172A;
-  --ink-soft: #1E293B;
-  --muted: #5B6B7F;
-  --border: #E2E8F0;
-  --surface: #F1F5F9;
-  --canvas: #F8FAFC;
-  --white: #FFFFFF;
+  --navy: #3DDC84;
+  --navy-dark: #2EC274;
+  --navy-tint: #14291E;
+  --teal: #3DDC84;
+  --teal-tint: #14291E;
+  --ink: #EAF7EF;
+  --ink-soft: #CFE3D6;
+  --muted: #93A79B;
+  --border: #1F3229;
+  --surface: #0F1A15;
+  --canvas: #08100C;
+  --white: #111D17;
+  --on-accent: #06120D;
 
   --font-display: 'Plus Jakarta Sans', Arial, sans-serif;
   --font-body: 'Inter', Arial, sans-serif;
@@ -59,7 +60,7 @@ h3 { font-size: 1.4rem; font-weight: 700; }
   left: -999px;
   top: 0;
   background: var(--navy);
-  color: #fff;
+  color: var(--on-accent);
   padding: 0.75rem 1rem;
   z-index: 100;
 }
@@ -83,10 +84,10 @@ h3 { font-size: 1.4rem; font-weight: 700; }
   transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
   white-space: nowrap;
 }
-.btn-primary { background: var(--navy); color: #fff; }
-.btn-primary:hover { background: var(--navy-dark); }
+.btn-primary { background: var(--navy); color: var(--on-accent); font-weight: 700; }
+.btn-primary:hover { background: var(--navy-dark); color: var(--on-accent); }
 .btn-secondary { background: var(--white); color: var(--ink-soft); border-color: var(--border); }
-.btn-secondary:hover { background: var(--surface); }
+.btn-secondary:hover { background: var(--navy-tint); border-color: var(--navy); }
 .btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
 .btn-lg { padding: 1rem 2rem; font-size: 1.05rem; }
 .btn-block { width: 100%; }
@@ -96,7 +97,7 @@ h3 { font-size: 1.4rem; font-weight: 700; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(248, 250, 252, 0.92);
+  background: rgba(8, 16, 12, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -107,7 +108,7 @@ h3 { font-size: 1.4rem; font-weight: 700; }
   justify-content: space-between;
   gap: 1rem;
 }
-.logo img { height: 28px; width: auto; }
+.logo img { height: 52px; width: auto; }
 .nav-desktop { display: none; gap: 1.75rem; font-size: 0.92rem; font-weight: 500; color: var(--ink-soft); }
 .nav-desktop a:hover { color: var(--navy); }
 .header-actions { display: flex; align-items: center; gap: 0.75rem; }
@@ -267,7 +268,7 @@ h3 { font-size: 1.4rem; font-weight: 700; }
   height: 1.6rem;
   border-radius: 50%;
   background: var(--navy);
-  color: #fff;
+  color: var(--on-accent);
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
@@ -318,7 +319,7 @@ h3 { font-size: 1.4rem; font-weight: 700; }
   flex-direction: column;
   gap: 0.4rem;
 }
-.price-card-featured { border-color: var(--navy); box-shadow: 0 10px 28px rgba(15, 23, 42, 0.07); }
+.price-card-featured { border-color: var(--navy); box-shadow: 0 0 0 1px var(--navy), 0 14px 36px rgba(61, 220, 132, 0.12); }
 .price-label { font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
 .price { margin: 0.25rem 0 0.25rem; }
 .price-amount { font-family: var(--font-display); font-size: 2.2rem; font-weight: 800; color: var(--ink); }
@@ -330,7 +331,7 @@ h3 { font-size: 1.4rem; font-weight: 700; }
   top: -0.7rem;
   right: 1.25rem;
   background: var(--teal);
-  color: #fff;
+  color: var(--on-accent);
   font-family: var(--font-mono);
   font-size: 0.7rem;
   font-weight: 600;
@@ -409,8 +410,8 @@ h3 { font-size: 1.4rem; font-weight: 700; }
   height: 42px;
   border-radius: 50%;
   border: none;
-  background: var(--white);
-  color: var(--ink);
+  background: var(--navy);
+  color: var(--on-accent);
   font-size: 1.6rem;
   line-height: 1;
   cursor: pointer;
